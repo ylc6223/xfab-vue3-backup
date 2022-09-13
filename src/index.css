@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    :root {
+        --body-color: #e4e9f7;
+        --nav-color: #37517e;
+        --side-nav: #54a0ff;
+        --search-bar: #f2f2f2;
+        --search-text: #010718;
+        --caption-color: #37517e;
+    }
+
+    body.dark {
+        --body-color: #18191a;
+        --nav-color: #242526;
+        --side-nav: #242526;
+        --search-bar: #242526;
+        --text-color: #ccc;
+    }
+
+}
+@layer components {
+    .dark-light, .searchToggle {
+        @apply flex items-center justify-center my-0 mx-[5px] h-[40px] w-[40px];
+    }
+
+    .dark-light i, .searchToggle i {
+        @apply absolute text-white text-xl cursor-pointer transition-all duration-300 ease-in-out;
+    }
+
+    .dark-light i.icon-moon {
+        @apply opacity-0 pointer-events-none;
+    }
+
+    .dark-light.active i.icon-moon {
+        @apply opacity-100 pointer-events-auto;
+    }
+
+    .dark-light.active i.icon-sun {
+        @apply opacity-0 pointer-events-none;
+    }
+
+    .search-field {
+        @apply absolute bottom-[-85px] right-[5px] h-[50px] w-[300px] flex items-center bg-sky-500 dark:bg-stone-50  p-[3px] rounded-md shadow-[0_5px_5px_rgba(0,0,0,0.1)] opacity-0 z-20;
+    }
+
+    .search-field::before {
+        @apply content-[''] absolute right-[14px] top-[-4px] h-[12px] w-[12px] bg-sky-500 dark:bg-stone-50 -rotate-45 z-[-1];
+    }
+
+    .search-field input {
+        @apply h-full w-full pt-0 pr-[45px] pb-0 pl-[15px] outline-none border-none rounded text-sm font-normal text-[#010718] dark:text-white bg-[#f2f2f2] dark:bg-[#242526];
+    }
+
+    .search-field i {
+        @apply absolute text-blue-500 dark:text-white right-[15px] text-2xl font-bold cursor-pointer;
+    }
+
+    .searchToggle.active ~ .search-field {
+        @apply bottom-[-74px] opacity-100 pointer-events-auto;
+    }
+
+    .searchToggle.active i.icon-fenxiang {
+        @apply opacity-0 pointer-events-none;
+    }
+
+    .searchToggle i.icon-cancel {
+        @apply opacity-0 pointer-events-none;
+    }
+
+    .searchToggle.active i.icon-cancel {
+        @apply opacity-100 pointer-events-auto;
+    }
+
+    .sidebarTrigger {
+        @apply text-2xl p-[5px] cursor-pointer;
+    }
+
+    nav.active .menu {
+        @apply translate-x-0;
+    }
+
+    .menu {
+        @apply fixed md:static h-screen md:h-auto w-[320px] md:w-auto -translate-x-full md:translate-x-0 top-0 p-5 md:p-0 bg-side-bar md:bg-transparent z-[101] transition duration-500;
+    }
+
+    .section-title {
+        @apply text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight text-center text-caption-color;
+    }
+    .portfolio-item {
+        @apply mb-7 px-3 w-1/3 clear-both;
+    }
+
+    .portfolio-info {
+        @apply absolute bottom-0 left-3 right-3 opacity-0  z-[3] transition bg-[#37517ecc] p-3;
+    }
+
+
+    .portfolio-container .portfolio-item .portfolio-info .preview-link, .portfolio-container .portfolio-item .portfolio-info .details-link {
+        @apply absolute right-10 top-[calc(50%-18px)] text-3xl font-bold text-white transition ease-in duration-300;
+    }
+
+    .portfolio-container .portfolio-item .portfolio-info .details-link {
+        @apply right-2.5;
+    }
+}
+
+
+

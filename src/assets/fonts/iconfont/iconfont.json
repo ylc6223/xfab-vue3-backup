@@ -1,0 +1,58 @@
+{
+  "id": "3567504",
+  "name": "xfab-vue3",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "34927",
+      "name": "weibo",
+      "font_class": "weibo",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "77156",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "21937750",
+      "name": "ic_side",
+      "font_class": "ic_side",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "1024194",
+      "name": "cancel",
+      "font_class": "cancel",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "12579524",
+      "name": "sun",
+      "font_class": "sun",
+      "unicode": "e789",
+      "unicode_decimal": 59273
+    },
+    {
+      "icon_id": "159932",
+      "name": "search",
+      "font_class": "fenxiang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "14679181",
+      "name": "moon",
+      "font_class": "moon",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    }
+  ]
+}
