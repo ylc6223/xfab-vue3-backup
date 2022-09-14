@@ -4,7 +4,6 @@ import Home from '@/views/Home.vue'
 import About from '../views/About.vue'
 import Product from '../views/ProductLine.vue'
 import ServiceCase from '../views/ServiceCase.vue'
-import ContactUs from '../views/ContactUs.vue'
 import StaffChannel from '../views/StaffChannel.vue'
 
 const routes = [
@@ -32,11 +31,6 @@ const routes = [
         path: 'case',
         name: 'Case',
         component: ServiceCase,
-      },
-      {
-        path: 'contact',
-        name: 'ContactUs',
-        component: ContactUs,
       },
       {
         path: 'staff',

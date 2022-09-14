@@ -34,10 +34,6 @@ export default {
           label: '案例',
         },
         {
-          name: 'ContactUs',
-          label: '联系我们',
-        },
-        {
           name: 'Staff',
           label: '员工',
         },

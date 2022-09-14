@@ -61,7 +61,7 @@
             <i class="iconfont icon-cancel"></i>
             <i class="iconfont icon-fenxiang"></i>
           </div>
-          <div class="hidden" :class="{ 'search-field ': searchActive }">
+          <div class="search-field" :class="{ hidden: !searchActive }">
             <input type="text" placeholder="Search..." />
             <i class="iconfont icon-fenxiang"></i>
           </div>

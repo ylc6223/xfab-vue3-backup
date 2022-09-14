@@ -2,15 +2,15 @@
   <div
     id="introduction"
     class="flex w-full h-screen md:py-20 bg-fixed bg-cover bg-top bg-bottom bg-no-repeat justify-center"
-    style="background-image: url('https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg')"
+    style="background-image: url('https://tailwindcss-templates.netlify.app/dentalpro/images/cover-bg.jpeg')"
   >
     <div
       class="container flex justify-center items-center md:pt-4 text-center relative mx-auto text-amber-50 md:text-5xl"
     >
       <div class="row">
         <div>
-          <h1 class="md:mb-4">创造价值，成就客户</h1>
-          <h2 class="md:mb-16">业界领先的牙科机与智能水表制造商</h2>
+          <h1 class="md:mb-4">创造价值,为数字化口腔持续赋能</h1>
+          <h2 class="md:mb-16">业界领先的牙科机综合服务解决方案</h2>
           <a
             href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
             class="w-94 h-94 block relative rounded-full mx-auto play-btn"
@@ -67,19 +67,19 @@
     </section>
     <section id="structure" class="relative content">
       <h3 class="text-4xl text-center">业务架构</h3>
-      <div class="h-screen bg-amber-50"></div>
+      <div class="h-screen"></div>
     </section>
     <section id="teams" class="relative content">
       <h3 class="text-4xl text-center">管理团队</h3>
-      <div class="h-screen bg-amber-50"></div>
+      <div class="h-screen"></div>
     </section>
     <section id="culture" class="relative content">
       <h3 class="text-4xl text-center">企业文化</h3>
-      <div class="h-screen bg-amber-50"></div>
+      <div class="h-screen"></div>
     </section>
     <section id="office" class="relative content">
       <h3 class="text-4xl text-center">办公地点</h3>
-      <div class="h-screen bg-amber-50"></div>
+      <div class="h-screen"></div>
     </section>
   </div>
 </template>

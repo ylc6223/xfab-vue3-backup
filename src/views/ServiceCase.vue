@@ -1,5 +1,6 @@
 <template>
-  <div></div>
+  <section></section>
+  <div class="pt-16"></div>
 </template>
 
 <script>
