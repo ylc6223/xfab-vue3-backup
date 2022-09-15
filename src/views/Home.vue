@@ -1,23 +1,29 @@
 <template>
-  <section id="hero" class="w-full py-[60px] h-[80vh] bg-nav-color">
+  <section id="hero" class="w-full h-screen py-[60px] md:h-[80vh] bg-nav-color">
     <div class="container pt-16 px-3 mx-auto">
-      <div class="flex">
-        <div data-aos="fade-up" data-aos-delay="200" class="flex-1 flex flex-col justify-center">
-          <h1 class="text-5xl text-white mb-2.5">业界领先的牙科机综合服务解决方案</h1>
-          <h2 class="text-2xl text-gray-400 mb-12">我们是一个拥有丰富行业经验与高质量交付能力的团队</h2>
-          <div class="flex">
+      <div class="flex flex-wrap">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="order-2 md:order-1 w-full md:flex-1 flex flex-col justify-center"
+        >
+          <h1 class="text-2xl md:text-5xl text-white mb-2.5">业界领先的牙科机综合服务解决方案</h1>
+          <h2 class="text-lg md:text-2xl text-gray-400 mb-12">我们是一个拥有丰富行业经验与高质量交付能力的团队</h2>
+          <div class="flex justify-center md:justify-start">
             <button
-              class="px-7 py-2.5 font-semibold text-xl bg-cyan-500 hover:bg-blue-400 transition text-white rounded-full shadow-sm"
+              class="py-2.5 px-6 md:px-7 md:py-2.5 font-semibold text-base md:text-xl bg-cyan-500 hover:bg-blue-400 transition text-white rounded-full shadow-sm"
             >
               开始了解
             </button>
-            <a class="text-white text-xl ml-5 flex items-center" href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+            <a
+              class="text-white text-base ml-5 md:text-xl ml-5 flex items-center"
+              href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
               ><i class="iconfont icon-playcircle text-3xl"></i><span>观看视频</span></a
             >
           </div>
         </div>
-        <div data-aos="zoom-in" data-aos-delay="200" class="flex-1">
-          <img src="@/assets/images/hero-img.png" class="animated w-4/5 mx-auto" alt="" />
+        <div data-aos="zoom-in" data-aos-delay="200" class="order-1 md:order-2 w-full md:flex-1">
+          <img src="@/assets/images/hero-img.png" class="animated w-4/5 md:max-w-[100%] mx-auto" alt="" />
         </div>
       </div>
     </div>
@@ -25,8 +31,8 @@
 
   <section id="clients" class="py-3 bg-[#f3f5fa]">
     <div class="container mx-auto">
-      <div class="flex justify-center" data-aos="zoom-in">
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+      <div class="flex flex-wrap md:flex-nowrap justify-center" data-aos="zoom-in">
+        <div class="flex-[0_0_auto] w-1/2 md:w-1/6 flex justify-center items-center">
           <img
             src="@/assets/images/clients/client-1.png"
             class="transition iduration-[400] nline-block py-4 grayscale hover:grayscale-0 hover:scale-110 max-w-[45%]"
@@ -34,7 +40,7 @@
           />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="flex-[0_0_auto] w-1/2 md:w-1/6 flex justify-center items-center">
           <img
             src="@/assets/images/clients/client-2.png"
             class="transition iduration-[400] nline-block py-4 grayscale hover:grayscale-0 hover:scale-110 max-w-[45%]"
@@ -42,7 +48,7 @@
           />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="flex-[0_0_auto] w-1/2 md:w-1/6 flex justify-center items-center">
           <img
             src="@/assets/images/clients/client-3.png"
             class="transition iduration-[400] nline-block py-4 grayscale hover:grayscale-0 hover:scale-110 max-w-[45%]"
@@ -50,7 +56,7 @@
           />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="flex-[0_0_auto] w-1/2 md:w-1/6 flex justify-center items-center">
           <img
             src="@/assets/images/clients/client-4.png"
             class="transition iduration-[400] nline-block py-4 grayscale hover:grayscale-0 hover:scale-110 max-w-[45%]"
@@ -58,7 +64,7 @@
           />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="flex-[0_0_auto] w-1/2 md:w-1/6 flex justify-center items-center">
           <img
             src="@/assets/images/clients/client-5.png"
             class="transition iduration-[400] nline-block py-4 grayscale hover:grayscale-0 hover:scale-110 max-w-[45%]"
@@ -66,7 +72,7 @@
           />
         </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <div class="flex-[0_0_auto] w-1/2 md:w-1/6 flex justify-center items-center">
           <img
             src="@/assets/images/clients/client-6.png"
             class="transition duration-[400] inline-block py-4 grayscale hover:grayscale-0 hover:scale-110 max-w-[45%]"
@@ -79,8 +85,8 @@
 
   <!-- 关于我们 -->
   <section id="about">
-    <div data-aos="fade-up" class="container mx-auto py-20">
-      <div class="section-title mb-20">
+    <div data-aos="fade-up" class="container mx-auto py-10 md:py-20">
+      <div class="section-title mb-10 md:mb-20">
         <h2>关于我们</h2>
       </div>
       <div data-aos="fade-right" class="px-16 mb-8">
@@ -88,11 +94,10 @@
         <p>
           我们是国内领先的牙科设备综合服务商，用创新的产品和服务推动牙科事业的进步
           <br />
-          我们一直秉承科技向善的宗旨。我们的产品服务全国客户逾百家，助力国内数字化口腔的发展，畅享便捷的工作和高效生产。
+          我们的产品服务全国客户逾百家，助力国内数字化口腔的发展，畅享便捷的工作和高效生产。
           <br />
-          公司推出多款服务全国的牙科设备，为客户带来优秀的使用体验。
+          我们提供多种牙科综合解决方案，为数字化口腔持续赋能。
           <br />
-          益华数字还提供XXXX等一系列服务，支持合作伙伴实现数字化转型，促进业务发展。
         </p>
       </div>
       <div class="text-center text-white">
@@ -104,80 +109,108 @@
   </section>
   <!-- 选择我们 -->
   <section id="select_our">
-    <div class="container mx-auto py-20" data-aos="fade-up">
-      <div class="section-title mb-20">
+    <div class="container mx-auto py-10 md:py-20" data-aos="fade-up">
+      <div class="section-title mb-10 md:mb-20">
         <h2>为什么选择我们</h2>
       </div>
-      <p class="px-16 mb-16">经验丰富、快速响应、勇于开拓进取的专业团队 强大的资源整合能力 一体化的综合服务能力</p>
-      <div class="px-16 mb-8">
-        <ul class="grid grid-cols-3 gap-10">
-          <li
-            v-for="(advantage, index) in advantages"
-            :key="advantage.label"
-            data-aos="zoom-in"
-            :data-aos-delay="(index + 1) * 100"
-            class="transition md:hover:scale-105 bg-white dark:bg-slate-800 rounded-lg py-[35px] px-[40px] ring-1 ring-slate-900/5 shadow-sm border"
+      <div
+        class="relative px-4 py-8 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+      >
+        <div class="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
+          <svg viewBox="0 0 88 88" class="w-full max-w-screen-xl text-indigo-100">
+            <circle fill="currentColor" cx="44" cy="44" r="15.5"></circle>
+            <circle fill-opacity="0.2" fill="currentColor" cx="44" cy="44" r="44"></circle>
+            <circle fill-opacity="0.2" fill="currentColor" cx="44" cy="44" r="37.5"></circle>
+            <circle fill-opacity="0.3" fill="currentColor" cx="44" cy="44" r="29.5"></circle>
+            <circle fill-opacity="0.3" fill="currentColor" cx="44" cy="44" r="22.5"></circle>
+          </svg>
+        </div>
+        <div class="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            v-for="item in advantages"
+            :key="item"
+            class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white dark:bg-slate-800 rounded shadow-xl group hover:shadow-2xl"
           >
-            <div class="flex items-center">
-              <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg mr-[15px]">
-                <svg
-                  class="h-6 w-6 text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
+            <div class="p-5">
+              <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-indigo-50">
+                <svg class="w-8 h-8 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                  <polygon
+                    stroke-width="3"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-                  ></path>
+                    fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                  ></polygon>
                 </svg>
-              </span>
-              <h3 class="text-slate-900 dark:text-white text-base font-medium tracking-tight">
-                {{ advantage.label }}
-              </h3>
+              </div>
+              <p class="mb-2 font-bold dark:text-white">{{ item.label }}</p>
+              <p class="text-sm leading-5 text-gray-900 dark:text-slate-400">
+                {{ item.text }}
+              </p>
             </div>
-            <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-              {{ advantage.text }}
-            </p>
-          </li>
-        </ul>
+            <div
+              class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- 累计合作数量 -->
   <section id="stats" class="py-3 bg-[#f3f5fa]">
-    <div
-      class="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4"
-      data-aos="zoom-in"
-    >
+    <div class="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
       <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
         <div class="text-center md:border-r">
-          <h6 class="text-2xl font-bold lg:text-3xl xl:text-4xl">144K</h6>
-          <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">Downloads</p>
+          <h6
+            data-purecounter-start="0"
+            data-purecounter-end="232"
+            data-purecounter-duration="1"
+            class="purecounter text-2xl font-bold lg:text-3xl xl:text-4xl"
+          >
+            0
+          </h6>
+          <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">累计服务客户</p>
         </div>
         <div class="text-center md:border-r">
-          <h6 class="text-2xl font-bold lg:text-3xl xl:text-4xl">12.9K</h6>
-          <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">Subscribers</p>
+          <h6
+            data-purecounter-start="0"
+            data-purecounter-end="232"
+            data-purecounter-duration="1"
+            class="purecounter text-2xl font-bold lg:text-3xl xl:text-4xl"
+          >
+            0
+          </h6>
+          <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">累计交付产品数量</p>
         </div>
         <div class="text-center md:border-r">
-          <h6 class="text-2xl font-bold lg:text-3xl xl:text-4xl">48.3K</h6>
-          <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">Users</p>
+          <h6
+            data-purecounter-start="0"
+            data-purecounter-end="232"
+            data-purecounter-duration="1"
+            class="purecounter text-2xl font-bold lg:text-3xl xl:text-4xl"
+          >
+            0
+          </h6>
+          <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">累计创造产值</p>
         </div>
         <div class="text-center">
-          <h6 class="text-2xl font-bold lg:text-3xl xl:text-4xl">24.5K</h6>
-          <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">Cookies</p>
+          <h6
+            data-purecounter-start="0"
+            data-purecounter-end="232"
+            data-purecounter-duration="1"
+            class="purecounter text-2xl font-bold lg:text-3xl xl:text-4xl"
+          >
+            0
+          </h6>
+          <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">全国分支机构</p>
         </div>
       </div>
     </div>
   </section>
   <!--产品展示-->
   <section id="product">
-    <div class="container mx-auto py-20" data-aos="fade-up">
-      <div class="section-title mb-20">
+    <div class="container mx-auto py-10 md:py-20" data-aos="fade-up">
+      <div class="section-title mb-10 md:mb-20">
         <h2>我们的产品</h2>
       </div>
       <portfoli />
@@ -185,13 +218,13 @@
   </section>
   <!-- 团队介绍-->
   <section id="teams">
-    <div class="container mx-auto py-20" data-aos="fade-up">
-      <div class="section-title mb-20">
+    <div class="container mx-auto py-10 md:py-20" data-aos="fade-up">
+      <div class="section-title mb-10 md:mb-20">
         <h2>团队介绍</h2>
       </div>
-      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="px-4 py-8 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          <div data-aos="fade-down" :data-aos-delay="100">
+          <div data-aos="fade-down">
             <div
               class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl"
             >
@@ -227,7 +260,7 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-down" :data-aos-delay="200">
+          <div data-aos="fade-down">
             <div
               class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl"
             >
@@ -263,7 +296,7 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-down" :data-aos-delay="300">
+          <div data-aos="fade-down">
             <div
               class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl"
             >
@@ -299,7 +332,7 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-down" :data-aos-delay="400">
+          <div data-aos="fade-down">
             <div
               class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl"
             >
@@ -335,7 +368,7 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-down" :data-aos-delay="500">
+          <div data-aos="fade-down">
             <div
               class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl"
             >
@@ -371,7 +404,7 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-down" :data-aos-delay="600">
+          <div data-aos="fade-down">
             <div
               class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl"
             >
@@ -407,7 +440,7 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-down" :data-aos-delay="700">
+          <div data-aos="fade-down">
             <div
               class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl"
             >
@@ -443,7 +476,7 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-down" :data-aos-delay="800">
+          <div data-aos="fade-down">
             <div
               class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl"
             >
@@ -485,8 +518,8 @@
   </section>
   <!-- 服务案例 -->
   <section id="case">
-    <div class="container mx-auto py-20">
-      <div class="section-title mb-20">
+    <div class="container mx-auto py-10 md:py-20">
+      <div class="section-title mb-10 md:mb-20">
         <h2>服务案例</h2>
       </div>
       <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
@@ -589,7 +622,7 @@
   </section>
   <!-- 联系我们 -->
   <section id="contactus">
-    <div class="container mx-auto py-20">
+    <div class="container mx-auto py-10 md:py-20">
       <h2 class="mb-4 md:mb-16 section-title">联系我们</h2>
       <section class="text-gray-600 body-font relative">
         <div class="absolute inset-0 bg-gray-300">
@@ -597,13 +630,13 @@
           <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
             <div class="lg:w-1/2 px-6">
               <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">地址</h2>
-              <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+              <p class="mt-1">广州市番禺区大石街宝江1号深蓝工业园4栋2层</p>
             </div>
             <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">邮箱</h2>
-              <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+              <a class="text-indigo-500 leading-relaxed">3d@zeer.com.cn</a>
               <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">电话</h2>
-              <p class="leading-relaxed">123-456-7890</p>
+              <p class="leading-relaxed">020-3918-2710</p>
             </div>
           </div>
         </div>
@@ -643,9 +676,7 @@
             >
               发送
             </button>
-            <p class="text-xs text-gray-500 mt-3">
-              Chicharrones blog helvetica normcore iceland tousled brook viral artisan.
-            </p>
+            <p class="text-xs text-gray-500 mt-3"></p>
           </div>
         </div>
       </section>
@@ -653,7 +684,7 @@
   </section>
   <!-- 新闻动态 -->
   <section id="news">
-    <div class="container mx-auto py-20">
+    <div class="container mx-auto py-10 md:py-20">
       <h2 class="mb-4 md:mb-16 section-title">新闻资讯</h2>
       <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
@@ -907,13 +938,13 @@
       </div>
     </div>
   </section>
-  <!--  -->
-  <section>
+  <!--  invite -->
+  <section class="hidden">
     <div class="bg-gray-50">
       <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight">
-          <span class="block">Ready to dive in?</span>
-          <span class="block text-indigo-600">Start your free trial today.</span>
+          <span class="block">准备好了吗?</span>
+          <span class="block text-indigo-600">开启你的探索之旅.</span>
         </h2>
         <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
           <div class="inline-flex rounded-md shadow">
@@ -921,7 +952,7 @@
               href="#"
               class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
             >
-              Get started
+              开始使用
             </a>
           </div>
           <div class="ml-3 inline-flex rounded-md shadow">
@@ -929,7 +960,7 @@
               href="#"
               class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
             >
-              Learn more
+              获取更多
             </a>
           </div>
         </div>
@@ -945,7 +976,7 @@ import { Listbox } from '@headlessui/vue'
 import MapContainer from '../components/MapContainer.vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
+import PureCounter from '@srexi/purecounterjs'
 export default defineComponent({
   title: 'Parallax',
   url: import.meta.url,
@@ -963,11 +994,11 @@ export default defineComponent({
         },
         {
           label: '专业的服务团队',
-          text: '具有专业的服务团队，团队成员具备专业素质，丰富经验，能够根据客户的不同需求，提供全面专业的服务。具有专业的服务团队，团队成员具备专业素质，丰富经验，能够根据客户的不同需求，提供全面专业的服务。',
+          text: '具有专业的服务团队，团队成员具备专业素质，丰富经验，能够根据客户的不同需求，提供全面专业的服务。',
         },
         {
           label: '严格的质量管理',
-          text: '完善的内部质量控制对资金的支付、数据的制作及业务报告的生成和传递都制定了独立的内部监管流程。',
+          text: '完善的内部质量控制、独立的内部监管流程。',
         },
         {
           label: '完善的系统平台',
@@ -975,11 +1006,11 @@ export default defineComponent({
         },
         {
           label: '良好的市场口碑',
-          text: '以高水准的服务质量和专业的服务精神赢得客户的广泛赞誉，定期对客户进行业务走访及满意度调查，及时收集客户需求反馈，努力提升服务质量，打造具有专业化经验的客户服务团队。',
+          text: '以高水准的服务质量和专业的服务精神赢得客户的信赖，定期对客户进行业务走访及满意度调查，及时收集客户需求反馈，努力提升服务质量，打造具有专业化经验的客户服务团队。',
         },
         {
           label: '众多的合作伙伴',
-          text: '与境外合作资源形成了无缝隙的流程合作模式, 能够安排团组与境外各级政府、企业、机构、大学等座谈交流、培训学习、展览会议等活动, 提供专业的团组接待保障服务。。',
+          text: '与众多知名品牌达成合作关系, 能够提供专业的解决方案。',
         },
       ],
     }
@@ -990,6 +1021,7 @@ export default defineComponent({
       easing: 'ease-in-out',
       mirror: false,
     })
+    const pure = new PureCounter()
   },
 })
 </script>

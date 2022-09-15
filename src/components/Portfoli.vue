@@ -5,7 +5,7 @@
         v-for="(item, index) in menus"
         :key="item"
         :data-filter="item.selector"
-        class="filter-btn rounded-xl px-4 py-2"
+        class="filter-btn text-sm md:text-base rounded-xl px-2 py-1 md:px-4 md:py-2"
         :class="{ 'bg-nav-color text-white': curIndex === index }"
         @click="checked(index, $event)"
       >

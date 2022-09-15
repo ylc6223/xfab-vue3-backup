@@ -89,7 +89,7 @@
         @apply text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight text-center text-caption-color;
     }
     .portfolio-item {
-        @apply mb-7 px-3 w-1/3 clear-both;
+        @apply mb-7 px-3 w-full md:w-1/3 clear-both;
     }
 
     .portfolio-info {
