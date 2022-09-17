@@ -32,5 +32,14 @@ export default defineConfig(({ command, mode }) => {
       port: VITE_PORT, // 端口
       proxy: createProxy(VITE_PROXY), // 代理
     },
+    optimizeDeps: {
+      esbuildOptions: {
+        target: 'es2020',
+      },
+    },
+
+    build: {
+      target: 'es2020',
+    },
   }
 })

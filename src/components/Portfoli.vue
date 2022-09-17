@@ -21,7 +21,7 @@
       >
         <div class="portfolio-img overflow-hidden">
           <img
-            :src="'/src/assets/images/portfolio/portfolio-' + (index + 1) + '.jpg'"
+            :src="`/images/portfolio/portfolio-${index + 1}.jpg`"
             class="w-full h-auto object-cover group-hover:scale-110 transition ease-in duration-300"
             alt=""
           />
